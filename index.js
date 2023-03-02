@@ -1,6 +1,6 @@
 var formulario = document.getElementById('form-login')
 
-formulario.addEventListener('submit', function (evento){
+formulario.addEventListener('submit',function(evento){
     evento.preventDefault()
-    alert("Bienvenido" + document.getElementById("nombre.logins").value)
+    alert("Bienvenido " + document.getElementById('nombre-login').value)
 })
