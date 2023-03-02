@@ -5,7 +5,7 @@ function createWindow(){
         height:300,
         width:300
     })
-
-    ventana.loadFile('index.htaml')
+0
+    ventana.loadFile('index.html')
 }
 app.whenReady().then(createWindow)
