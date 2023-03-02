@@ -1,5 +1,6 @@
 var formulario = document.getElementById('form-login')
 var pass = document.getElementById('pass-login')
+var nombre = document.getElementById('nombre-login')
 
 var expMay = RegExp("[A-Z]")
 var expMin = RegExp("[a-z]")
@@ -15,9 +16,11 @@ formulario.addEventListener('submit',function(evento){
         error +=" Debe tener una minuscula "
     }if(!pass.value.match(expNum)){
         error +=" Debe tener un numero "
+    }  
+    if(error==""){
+        window.comunicacion.registroValido([nombre.value, pass.value]);
     }else{
-        error = "Bienvenido"
+        alert(error)
     }
-    alert(error)
-    
+
 })
