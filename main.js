@@ -15,5 +15,6 @@ function createWindow(){
 }
 ipcMain.on('registroValido',function(event,args){
     console.log(args)
+    ventana.webContents.send('inicioCorrecto','Bienvenido')
 })
 app.whenReady().then(createWindow)
