@@ -10,7 +10,7 @@ function createWindow(){
         webPreferences:{
             preload: path.join(app.getAppPath(),'preload.js')
         }
-    })
+    });
     ventana.loadFile('index.html')
 }
 ipcMain.on('registroValido',function(event,args){
